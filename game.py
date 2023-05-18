@@ -74,14 +74,14 @@ if new_button:
 elif "nums" not in st.session_state or "objective" not in st.session_state:
     st.session_state.nums, st.session_state.objective, st.session_state.sol = init_game()
 
-st.header("Numbers are: " + numbers_to_text(st.session_state.nums))
-st.header("Objective: " + str(st.session_state.objective))
 st.write("The goal is to achieve the objective by using all 5 numbers and the 4 basic arithmetic operations.")
 st.write("Operations order are performed as follows:")
 st.code("((((num1 op1 num2) op2 num3) op3 num4) op4 num5)")
 st.write("For example:")
 st.code("num1=1, num2=2, num3=3, num4=4, num5=5, op1=+, op2=*, op3=-, op4=:")
 st.code("((((1+2)*3)-4):5)=1")
+st.header("Numbers are: " + numbers_to_text(st.session_state.nums))
+st.header("Objective: " + str(st.session_state.objective))
 cols = st.columns(9)
 col_idx = 0
 with cols[col_idx]:
