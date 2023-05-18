@@ -76,6 +76,11 @@ elif "nums" not in st.session_state or "objective" not in st.session_state:
 
 st.header("Numbers are: " + numbers_to_text(st.session_state.nums))
 st.header("Objective: " + str(st.session_state.objective))
+st.write("The goal is to achive the objective by using all 5 numbers and the 4 basic arithmetic operations.")
+st.write("Operations order are performed as follows:")
+st.write("((((num1 op1 num2) op2 num3) op3 num4) op4 num5)")
+st.write("for example, if num1=1, num2=2, num3=3, num4=4, num5=5, and op1=+, op2=*, op3=-, op4=:")
+st.write("((((1+2)*3)-4):5)=1")
 cols = st.columns(9)
 col_idx = 0
 with cols[col_idx]:
