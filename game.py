@@ -183,7 +183,7 @@ def play_audio(file_path):
         )
 
 st.set_page_config(layout="wide")
-st.header("The goal is to achieve the objective by using all 5 numbers, parenthesis and the 4 basic arithmetic operations. For example:")
+st.subheader("The goal is to achieve the objective by using all 5 numbers, parenthesis and the 4 basic arithmetic operations. For example:")
 st.code("numbers=5,2,3,1,4 objective=1")
 st.code("((1+2)*3-4):5=1")
 new_button = st.button('New Game')
