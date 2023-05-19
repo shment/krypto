@@ -193,7 +193,7 @@ if new_button:
 elif "nums" not in st.session_state or "objective" not in st.session_state:
     st.session_state.nums, st.session_state.objective, st.session_state.sol = init_game()
     
-st.header("Numbers are: " + numbers_to_text(st.session_state.nums))
+st.header("Numbers: " + numbers_to_text(st.session_state.nums))
 st.header("Objective: " + str(int(st.session_state.objective)))
 expression = st.text_input('Enter your answer here')
 check_button = st.button('Check Solution')
