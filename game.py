@@ -182,6 +182,7 @@ def play_audio(file_path):
             unsafe_allow_html=True,
         )
 
+st.set_page_config(layout="wide")
 st.write("The goal is to achieve the objective by using all 5 numbers, parenthesis and the 4 basic arithmetic operations.")
 st.write("For example:")
 st.code("numbers=5,2,3,1,4 objective=1")
