@@ -198,7 +198,8 @@ expression = st.text_input('Enter your answer here')
 check_button = st.button('Check Solution')
 sol_button = st.button('Show solution')
 if sol_button:
-    st.code("Solution: " + st.session_state.sol)
+    st.write('Solution: ')
+    st.code(st.session_state.sol)
     
 if check_button:
     res = str_to_num(expression)
